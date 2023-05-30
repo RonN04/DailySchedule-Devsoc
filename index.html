@@ -1,0 +1,193 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Schedule
+        
+    </title>
+    
+    <style>h1{color: var(--secondary-color);
+        background-color:var(--primary-color);}
+        th,td {border: 1px solid #ccc; } 
+        
+        table{border-collapse: collapse;
+        width:100%}
+        td{text-align: center;
+        color: var(--primary-color);
+        background-color:var(--secondary-color);}
+        th{background-color: rgb(255, 166, 0);
+        color:brown;}
+        #icon{
+            width:30px;
+            cursor:pointer;
+        }
+        :root{
+            --primary-color:rgb(178,255,23) ;
+            --secondary-color: crimson;
+        }
+        .dark-theme
+        {--primary-color:crimson ;
+            --secondary-color: rgb(178,255,23);
+
+        }
+
+        </style>
+     
+    
+
+ </head>
+ <body>
+    <h1>Daily Schedule
+        
+            <img src="Downloads/moon.png" id="icon"> 
+   
+        
+    </h1>
+  
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td>M2 Tut</td>
+                <td>Thermo tut</td>
+                <td>Chill</td>
+                <td>MOW tut</td>
+                <td>Chill</td>
+                
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>M2 lec</td>
+                <td>Chill</td>
+                <td>M2 lec</td>
+                <td>WS</td>
+                <td>Chill</td>
+                
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>Chill</td>
+                <td>Chill</td>
+                <td>Chill</td>
+                <td>WS</td>
+                <td>Chill</td>
+                
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>ES lec</td>
+                <td>Chill</td>
+                <td>ES lec</td>
+                <td>WS</td>
+                <td>ES lec</td>
+                
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>CP lec</td>
+                <td>MOW lec</td>
+                <td>CP lec</td>
+                <td>MOW lec</td>
+                <td>CP lec</td>
+                
+            </tr>
+            <tr>
+                <td>1:00</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+              
+                
+            </tr>
+            <tr>
+                <td>2:00</td>
+                <td>Sleep</td>
+                <td>Sleep</td>
+                <td>Sleep</td>
+                <td>Sleep</td>
+                <td>Bio lab</td>
+                
+            </tr>
+            <tr>
+                <td>3:00</td>
+                <td>Thermo lec</td>
+                <td>Sleep</td>
+                <td>Thermo lec</td>
+                <td>Thermo tut</td>
+                <td>Bio lab</td>
+                
+            </tr>
+            <tr>
+                <td>4:00</td>
+                <td>Chill</td>
+                <td>Chill</td>
+                <td>Chill</td>
+                <td>Chill</td>
+                <td>Chill</td>
+              
+                
+            </tr>
+            <tr>
+                <td>5:00</td>
+                <td>Frisbee</td>
+                <td>ES tut</td>
+                <td>Frisbee</td>
+                <td>Frisbee</td>
+                <td>MOW tut</td>
+                
+            </tr>
+            <tr>
+                <td>6:30</td>
+                <td>Study</td>
+                <td>Study</td>
+                <td>CP lab</td>
+                <td>Study</td>
+                <td>Study</td>
+                
+            </tr>
+            <tr>
+                <td>8:00</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+             
+                
+            </tr>
+
+
+            
+        </tbody>
+    </table>
+<script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+        icon.src="Downloads/moon.png";
+                    }
+        else{
+                        icon.src= "Downloads/sun.png";
+                    }
+                }
+</script> 
+ </body>
+ </html>
